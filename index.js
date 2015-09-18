@@ -817,7 +817,7 @@
     options = options || {};
     this.path = (path === '*') ? '(.*)' : path;
     this.method = 'GET';
-    this.regexp = pathtoRegexp(this.path,
+    this.regexp = pathToRegexp(this.path,
       this.keys = [],
       options.sensitive,
       options.strict);
